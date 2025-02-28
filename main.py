@@ -1,12 +1,15 @@
 import streamlit as st
-import pandas as pd
+from PIL import Image
 
-st.title('Умный (не очень) поиск сериалов')
-st.divider()
-user_input = st.text_input("Чего желаешь посмотреть")
-col1, col2 = st.columns([8, 1])  # Правая колонка меньше
-with col2:
-    click = st.button("Найти")
+st.title("Умный поиск сериалов")
 
-if click:
-    pass
+logo = Image.open('images/logo_0.jpeg')
+st.image(logo, width=800)
+
+st.write("### Оглавление")
+st.write("Для улучшения поиска на стриминговом сервисе мы создали систему семантического поиска, которая учитывает описание сериалов.")
+
+st.write("### Команда проекта:")
+st.write("[Илья](https://github.com/lefuuu)")
+st.write("[Алина](https://github.com/RenaTheDv)")
+st.write("[Даша](https://github.com/DashonokOk)")
