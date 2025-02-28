@@ -31,4 +31,4 @@
 
 ## Макет интерфейса
 
-![images/screenshot.png]
+![Превью](images/screenshot.png)
